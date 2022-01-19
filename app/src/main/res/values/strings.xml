@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">Calyx</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER (DEMO START)</string>
+    <string name="btn_link_to_register">Not a Member? Sign up</string>
+    <string name="btn_link_to_login">Already registered? Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="calyx_logo">Calyx Logo</string>
+    <string name="title_activity_post">Post</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="new_tree">New Tree</string>
+    <string name="new_post">New Post</string>
+    <string name="take_photo">Take a Photo or Video</string>
+    <string name="photo_library">Choose From Gallery</string>
+    <string name="notification">Notifications</string>
+    <string name="upload_file">Upload a File</string>
+    <string name="new_leaf">New Leaf</string>
+    <string name="title">Title</string>\
+    <string name="description">Description</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_tree">Tree</string>
+
+
+    <string name="title_section1">Profile</string>
+    <string name="title_section2">Settings</string>
+    <string name="title_section3">Grove</string>
+    <string name="title_section4">Discover Grovelet</string>
+    <string name="title_section5">Leafs</string>
+    <string name="title_section6">Pigments</string>
+    <string name="title_section7">Help</string>
+    <string name="title_section8">About</string>
+    <string name="title_section9">Signout</string>
+    <string name="title_activity_drawer">Calyx</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_leaf_controller">LeafController</string>
+    <string name="title_activity_welcome">Welcome</string>
+</resources>

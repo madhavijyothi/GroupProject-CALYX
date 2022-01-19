@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.compass.ingenium.myapplication.LeafController">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_toolbar"
+        android:elevation="10dp"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/leaf_main_card"
+        android:layout_gravity="center"
+        android:layout_width="360dp"
+        android:layout_height="370dp"
+        android:layout_marginBottom="10dp"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="370dp">
+
+            <!--<com.getbase.floatingactionbutton.FloatingActionsMenu
+                xmlns:fab="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                fab:fab_expandDirection="left"
+                fab:fab_addButtonColorNormal="@color/actionbar_blue"
+                fab:fab_addButtonColorPressed="@color/navigation_bar_blue"
+                fab:fab_addButtonPlusIconColor="@color/white"
+                android:layout_alignBottom="@+id/leaf_main_creator"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <com.getbase.floatingactionbutton.AddFloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:id="@+id/leaf_image_fab"
+                    fab:fab_colorNormal="@color/login_yellow"
+                    fab:fab_plusIconColor="@color/bg_login"
+                    fab:fab_colorPressed="@color/fab_pressed_yellow"
+                    fab:fab_title="Change the Leaf Image"/>-->
+
+                <com.getbase.floatingactionbutton.AddFloatingActionButton
+                    xmlns:fab="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:id="@+id/add_post_fab"
+                    fab:fab_colorNormal="@color/actionbar_blue"
+                    fab:fab_plusIconColor="@color/white"
+                    fab:fab_colorPressed="@color/navigation_bar_blue"
+                    fab:fab_title="Add a Post"
+                    android:layout_above="@+id/leaf_main_description"
+                    android:layout_alignParentEnd="true" />
+
+            <!--</com.getbase.floatingactionbutton.FloatingActionsMenu>-->
+
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:background="@drawable/ingenium"
+                android:transitionName="leaf_image"
+                android:id="@+id/image_item"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/leaf_main_title"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:layout_marginLeft="14dp"
+                android:layout_alignBottom="@+id/image_item"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/leaf_main_creator"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:textSize="@dimen/abc_text_size_body_1_material"
+                android:fontFamily="sans-serif-regular"
+                android:layout_marginTop="14dp"
+                android:layout_below="@+id/image_item"
+                android:layout_alignLeft="@+id/leaf_main_title"
+                android:layout_alignStart="@+id/leaf_main_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/leaf_main_description"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:fontFamily="sans-serif-light"
+                android:layout_below="@+id/leaf_main_creator"
+                android:layout_alignLeft="@+id/leaf_main_creator"
+                android:layout_alignStart="@+id/leaf_main_creator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/leaf_main_member"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:textSize="@dimen/abc_text_size_body_2_material"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_below="@+id/leaf_main_description"
+                android:layout_alignLeft="@+id/leaf_main_description"
+                android:layout_alignStart="@+id/leaf_main_description" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/post_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/leaf_main_card" />
+
+</RelativeLayout>
